@@ -6,8 +6,7 @@
   "keywords": [
     "css",
     "oocss",
-    "",
-    ""
+    "counter-reset"
   ],
   "css-counter-reset": {
     "type": "git",
