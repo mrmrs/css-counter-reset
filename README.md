@@ -24,21 +24,21 @@ or download the css on github and include in your project.
 .cr-none {  counter-reset: none; }
 .cr-i {     counter-reset: inherit; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .cr-ns {       counter-reset: count; }
   .cr-minus-ns { counter-reset: count -1; }
   .cr-none-ns {  counter-reset: none; }
   .cr-i-ns {     counter-reset: inherit; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .cr-m {       counter-reset: count; }
   .cr-minus-m { counter-reset: count -1; }
   .cr-none-m {  counter-reset: none; }
   .cr-i-m {     counter-reset: inherit; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .cr-l {       counter-reset: count; }
   .cr-minus-l { counter-reset: count -1; }
   .cr-none-l {  counter-reset: none; }
