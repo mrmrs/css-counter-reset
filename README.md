@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-counter-reset)
 ## File Size
 
 813B counter-reset.css
-614B counter-reset.min.css
+614B counter-reset.min.css 
+177B minified and gzipped
 
 ## The Code
 ```
