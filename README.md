@@ -20,7 +20,7 @@ View on [npm](https://www.npmjs.org/package/css-counter-reset)
 ## File Size
 
 813B counter-reset.css
-614B counter-reset.min.css 
+614B counter-reset.min.css
 177B minified and gzipped
 
 ## The Code
@@ -62,7 +62,7 @@ View on [npm](https://www.npmjs.org/package/css-counter-reset)
 
 The MIT License (MIT)
 
-Copyright (c) 2014 @mrmrs
+Copyright (c) 2015 @mrmrs
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
