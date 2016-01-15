@@ -1,84 +1,102 @@
-# CSS COUNTER RESET
+# css-counter-reset 0.0.7
 
-  Mobile-first classes for css-counter-reset.
-  Set the desired css-counter-reset on any element for any breakpoint.
-  Base class names are namespaced across three breakpoints:
+Css module of single purpose classes for counter reset
 
-*  -ns = not-small (covers everything larger than mobile)
-*  -m  = medium
-*  -l  = large
+#### Stats
 
-## Install
-Grab the css partial from github and include it in your project or alternatively
-you can install it via npm:
+207 | 16 | 16
+---|---|---
+bytes | selectors | declarations
+
+## Installation
+
+#### With [npm](https://npmjs.com)
+
 ```
 npm install --save-dev css-counter-reset
 ```
-View on [npm](https://www.npmjs.org/package/css-counter-reset)
 
+#### With Git
 
-## File Size
-
-813B counter-reset.css
-614B counter-reset.min.css
-177B minified and gzipped
-
-## The Code
 ```
-.cr {       counter-reset: count; }
+git clone https://github.com/tachyons-css/css-counter-reset
+```
+
+## Usage
+
+#### Using with [PostCSS](https://github.com/postcss/postcss)
+
+Import the css module
+
+```css
+@import "css-counter-reset";
+```
+
+Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+
+```sh
+$ npm i -g tachyons-cli
+$ tachyons-cli path/to/css-file.css > dist/t.css
+```
+
+#### Using the CSS
+
+The built CSS is located in the `css` directory. It contains an unminified and minified version.
+You can either cut and paste that css or link to it directly in your html.
+
+```html
+<link rel="stylesheet" href="path/to/module/css/css-counter-reset">
+```
+
+#### Development
+
+The source CSS files can be found in the `src` directory.
+Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+
+## The CSS
+
+```css
+/*
+   COUNTER RESET
+*/
+.cr { counter-reset: count; }
 .cr-minus { counter-reset: count -1; }
-.cr-none {  counter-reset: none; }
-.cr-i {     counter-reset: inherit; }
-
+.cr-none { counter-reset: none; }
+.cr-i { counter-reset: inherit; }
 @media screen and (min-width: 48em) {
-  .cr-ns {       counter-reset: count; }
-  .cr-minus-ns { counter-reset: count -1; }
-  .cr-none-ns {  counter-reset: none; }
-  .cr-i-ns {     counter-reset: inherit; }
+ .cr-ns { counter-reset: count; }
+ .cr-minus-ns { counter-reset: count -1; }
+ .cr-none-ns { counter-reset: none; }
+ .cr-i-ns { counter-reset: inherit; }
 }
-
-@media screen and (min-width: 48em) and (max-width: 64em) {
-  .cr-m {       counter-reset: count; }
-  .cr-minus-m { counter-reset: count -1; }
-  .cr-none-m {  counter-reset: none; }
-  .cr-i-m {     counter-reset: inherit; }
+@media screen and (min-width:48em) and (max-width: 64em) {
+ .cr-m { counter-reset: count; }
+ .cr-minus-m { counter-reset: count -1; }
+ .cr-none-m { counter-reset: none; }
+ .cr-i-m { counter-reset: inherit; }
 }
-
-@media screen and (min-width: 64em)  {
-  .cr-l {       counter-reset: count; }
-  .cr-minus-l { counter-reset: count -1; }
-  .cr-none-l {  counter-reset: none; }
-  .cr-i-l {     counter-reset: inherit; }
+@media screen and (min-width: 64em) {
+ .cr-l { counter-reset: count; }
+ .cr-minus-l { counter-reset: count -1; }
+ .cr-none-l { counter-reset: none; }
+ .cr-i-l { counter-reset: inherit; }
 }
-
 ```
 
-## Author
+## Contributing
 
-[http://mrmrs.cc - Entire internet gateway to all things mrmrs](http://mrmrs.cc)
-[http://mrmrs.io - Open source projects](http://mrmrs.io)
+1. Fork it
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
+## Authors
+
+* [mrmrs](http://mrmrs.io)
+* [johno](http://johnotander.com)
 
 ## License
 
-The MIT License (MIT)
-
-Copyright (c) 2015 @mrmrs
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+MIT
 
