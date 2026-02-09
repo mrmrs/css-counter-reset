@@ -1,38 +1,44 @@
 {
   "name": "css-counter-reset",
-  "style": "counter-reset.css",
-  "version": "1.0.8",
-  "homepage": "http://github.com/mrmrs/css-counter-reset",
-  "description": "Css module of single purpose classes for counter reset",
+  "version": "2.0.0",
+  "description": "Functional CSS for counter-reset",
+  "style": "dist/counter-reset.css",
+  "main": "dist/counter-reset.css",
+  "exports": {
+    ".": "./dist/counter-reset.css",
+    "./dist/*": "./dist/*",
+    "./src/*": "./src/*"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "node build.js",
+    "prepublishOnly": "npm run build"
+  },
   "keywords": [
     "css",
-    "oocss",
-    "counter-reset"
+    "counter-reset",
+    "utility",
+    "single-purpose",
+    "functional-css"
   ],
-  "css-counter-reset": {
+  "homepage": "https://github.com/mrmrs/css-counter-reset",
+  "repository": {
     "type": "git",
-    "url": "http://github.com/mrmrs/css-counter-reset.git"
+    "url": "https://github.com/mrmrs/css-counter-reset.git"
   },
   "bugs": {
-    "url": "https://github.com/mrmrs/css-counter-reset/issues",
-    "email": "hi@mrmrs.cc"
+    "url": "https://github.com/mrmrs/css-counter-reset/issues"
   },
   "author": {
     "name": "Adam Morse",
     "email": "hi@mrmrs.cc",
     "url": "http://mrmrs.cc"
   },
-  "contributors": [
-    {
-      "name": "Adam Morse",
-      "email": "hi@mrmrs.cc"
-    }
-  ],
-  "license": "MIT",
+  "license": "ISC",
   "devDependencies": {
     "lightningcss": "^1"
-  },
-  "scripts": {
-    "build": "node build.js"
   }
 }
