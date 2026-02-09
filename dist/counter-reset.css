@@ -1,30 +1,69 @@
-/*
-   COUNTER RESET
-*/
-
-.cr {       counter-reset: count; }
-.cr-minus { counter-reset: count -1; }
-.cr-none {  counter-reset: none; }
-.cr-i {     counter-reset: inherit; }
-
-@media screen and (min-width: 48em) {
-  .cr-ns {       counter-reset: count; }
-  .cr-minus-ns { counter-reset: count -1; }
-  .cr-none-ns {  counter-reset: none; }
-  .cr-i-ns {     counter-reset: inherit; }
+.cr {
+  counter-reset: count;
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
-  .cr-m {       counter-reset: count; }
-  .cr-minus-m { counter-reset: count -1; }
-  .cr-none-m {  counter-reset: none; }
-  .cr-i-m {     counter-reset: inherit; }
+.cr-minus {
+  counter-reset: count -1;
 }
 
-@media screen and (min-width: 64em) {
-  .cr-l {       counter-reset: count; }
-  .cr-minus-l { counter-reset: count -1; }
-  .cr-none-l {  counter-reset: none; }
-  .cr-i-l {     counter-reset: inherit; }
+.cr-none {
+  counter-reset: none;
 }
 
+.cr-i {
+  counter-reset: inherit;
+}
+
+@media screen and (width >= 32em) {
+  .cr-s {
+    counter-reset: count;
+  }
+
+  .cr-minus-s {
+    counter-reset: count -1;
+  }
+
+  .cr-none-s {
+    counter-reset: none;
+  }
+
+  .cr-i-s {
+    counter-reset: inherit;
+  }
+}
+
+@media screen and (width >= 48em) {
+  .cr-m {
+    counter-reset: count;
+  }
+
+  .cr-minus-m {
+    counter-reset: count -1;
+  }
+
+  .cr-none-m {
+    counter-reset: none;
+  }
+
+  .cr-i-m {
+    counter-reset: inherit;
+  }
+}
+
+@media screen and (width >= 96em) {
+  .cr-l {
+    counter-reset: count;
+  }
+
+  .cr-minus-l {
+    counter-reset: count -1;
+  }
+
+  .cr-none-l {
+    counter-reset: none;
+  }
+
+  .cr-i-l {
+    counter-reset: inherit;
+  }
+}
