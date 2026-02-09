@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { transform } = require('lightningcss');
 
-const srcFile = path.join(__dirname, 'src', 'css-counter-reset.css');
+const srcFile = path.join(__dirname, 'src', 'counter-reset.css');
 const distDir = path.join(__dirname, 'dist');
 
 // Read source
@@ -15,22 +15,22 @@ if (!fs.existsSync(distDir)) {
 
 // Unminified — just normalize formatting
 const { code: unminified } = transform({
-  filename: 'css-counter-reset.css',
+  filename: 'counter-reset.css',
   code: Buffer.from(source),
   minify: false,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-counter-reset.css'), unminified);
+fs.writeFileSync(path.join(distDir, 'counter-reset.css'), unminified);
 
 // Minified
 const { code: minified } = transform({
-  filename: 'css-counter-reset.css',
+  filename: 'counter-reset.css',
   code: Buffer.from(source),
   minify: true,
 });
 
-fs.writeFileSync(path.join(distDir, 'css-counter-reset.min.css'), minified);
+fs.writeFileSync(path.join(distDir, 'counter-reset.min.css'), minified);
 
 console.log('Build complete:');
-console.log(`  dist/css-counter-reset.css     ${unminified.length} bytes`);
-console.log(`  dist/css-counter-reset.min.css ${minified.length} bytes`);
+console.log(`  dist/counter-reset.css     ${unminified.length} bytes`);
+console.log(`  dist/counter-reset.min.css ${minified.length} bytes`);
